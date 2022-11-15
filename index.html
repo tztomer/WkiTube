@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- AIzaSyDdAiVRLKDpjnBuQkKt5h3_cF3tjNHdcbc -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>WkiTube</title>
+  </head>
+
+  <body onload="init()">
+    <div class="main-container">
+      <header>
+        <nav>
+          <h1 class="logo">WkiTube</h1>
+          <div class="search-container">
+            <input type="search" value="" name="search" id="search" placeholder="Search and hit enter" />
+            <button id="submit" onclick="onSubmit(event)" type="submit">Search</button>
+          </div>
+        </nav>
+      </header>
+
+      <img class="loader" hidden src="loader.gif" alt="loader" />
+      <main>
+        <section class="section-left"></section>
+        <section class="section-right">
+          <div class="main-video">
+            <!-- <iframe width="100" height="100" src="https://www.youtube.com/embed/tgbNymZ7vqY"> </iframe> -->
+          </div>
+          <div class="main-content">
+            <p>
+              <!-- Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit nulla in, labore corrupti nobis perferendis fuga eum itaque ipsa saepe nostrum?
+              Dolores quae distinctio ducimus obcaecati tempore amet, veniam reiciendis. -->
+            </p>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="lib/axios.js"></script>
+    <script src="services/local-storage.js"></script>
+    <script src="services/axios-servis.js"></script>
+    <script src="main-controller.js"></script>
+  </body>
+</html>
